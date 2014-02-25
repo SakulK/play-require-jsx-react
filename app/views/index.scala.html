@@ -1,0 +1,11 @@
+@()
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Play Require JSX React</title>
+        @helper.requireJs(core = routes.Assets.at("javascripts/lib/require.js").url,
+            module = routes.Assets.at("javascripts/app").url)
+    </head>
+    <body>
+    </body>
+</html>
